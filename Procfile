@@ -1,0 +1,1 @@
+web: gunicorn hackrx_api:app
