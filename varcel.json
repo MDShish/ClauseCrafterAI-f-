@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/hackrx_api.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/v1/hackrx/run", "dest": "/api/hackrx_api.py" },
+    { "src": "/api/v1/health", "dest": "/api/hackrx_api.py" }
+  ]
+}
